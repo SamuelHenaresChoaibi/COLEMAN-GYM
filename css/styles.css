@@ -140,6 +140,14 @@ nav {
     animation-delay: 0.4s;
 }
 
+#dropdown-menu.show .menu-item:nth-child(5) {
+    animation-delay: 0.4s;
+}
+#dropdown-menu.show .menu-item:nth-child(6) {
+    animation-delay: 0.4s;
+}
+
+
 section {
     opacity: 0;
     transform: translateY(20px);
