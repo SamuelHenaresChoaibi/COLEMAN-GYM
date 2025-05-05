@@ -160,6 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'index.html'; 
             cart.length = 0; 
             localStorage.setItem('cart', JSON.stringify(cart));
+            alert('¡Compra realizada con éxito!');
+
         }
     });
 
