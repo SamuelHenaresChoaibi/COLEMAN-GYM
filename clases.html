@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clases en Coleman Gym - Únete a nuestras sesiones de Spinning, Yoga, Cross-Training, Pilates, Zumba y Boxeo para transformar tu cuerpo y mente.">
+  <meta name="keywords" content="gimnasio, fitness, spinning, yoga, cross-training, pilates, zumba, boxeo, clases">
+  <meta name="author" content="Coleman Gym">
+  <title>Clases - Coleman Gym</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="sources/logo-blanco.png">
+  <script defer src="js/script.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-black text-white p-4 fixed w-full top-0 z-20">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="sources/logo-blanco.png" alt="Coleman Gym Logo" class="h-16 mr-2">
+        <span class="text-xl font-bold">Coleman Gym</span>
+      </div>
+      <button id="hamburger" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Dropdown Menu -->
+    <div id="dropdown-menu" class="hidden bg-black text-white w-full absolute top-20 left-0 z-10">
+      <ul class="flex flex-col items-center py-6">
+        <li class="py-3 w-full text-center menu-item"><a href="index.html" class="nav-link hover:text-gray-300 text-lg font-semibold">Inicio</a></li>
+        <li class="py-3 w-full text-center menu-item"><a href="clases.html" class="nav-link hover:text-gray-300 text-lg font-semibold active">Clases</a></li>
+        <li class="py-3 w-full text-center menu-item"><a href="index.html#shop" class="nav-link hover:text-gray-300 text-lg font-semibold">Tienda</a></li>
+        <li class="py-3 w-full text-center menu-item"><a href="index.html#blog" class="nav-link hover:text-gray-300 text-lg font-semibold">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="classes-hero" class="h-screen flex items-center justify-center relative overflow-hidden pt-16">
+    <video class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay muted loop playsinline>
+      <source src="sources/clases-landing.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="relative text-center text-white z-10">
+      <h1 class="text-5xl font-bold mb-4">Nuestras Clases</h1>
+      <p class="text-xl mb-6">Descubre nuestras sesiones de Spinning, Yoga, Cross-Training, Pilates, Zumba y Boxeo diseñadas para todos los niveles.</p>
+      <a href="#classes" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 animate-button">Explora ahora</a>
+    </div>
+  </section>
+
+  <!-- Classes Section -->
+  <section id="classes" class="py-16 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Clases Disponibles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
+          <img src="sources/spinning.gif" alt="Spinning" class="mx-auto mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Spinning</h3>
+          <p>Sesiones intensivas de ciclismo indoor que combinan música motivadora y entrenadores expertos para mejorar tu resistencia y quemar calorías.</p>
+          <p class="mt-2 font-semibold">Horarios: Lunes a Viernes, 7:00 - 20:00</p>
+          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="spinning">Reservar</button>
+        </div>
+        <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
+          <img src="sources/yoga.gif" alt="Yoga" class="mx-auto mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Yoga</h3>
+          <p>Clases que fortalecen cuerpo y mente, con enfoque en flexibilidad, equilibrio y relajación. Ideal para principiantes y avanzados.</p>
+          <p class="mt-2 font-semibold">Horarios: Martes y Jueves, 8:00 - 18:00</p>
+          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="yoga">Reservar</button>
+        </div>
+        <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
+          <img src="sources/cross-training.gif" alt="Cross-Training" class="mx-auto mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Cross-Training</h3>
+          <p>Entrenamientos funcionales de alta intensidad para mejorar fuerza, agilidad y condición física. Perfecto para desafíos personales.</p>
+          <p class="mt-2 font-semibold">Horarios: Lunes, Miércoles, Viernes, 6:00 - 19:00</p>
+          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="cross-training">Reservar</button>
+        </div>
+        <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
+          <img src="sources/pilates.gif" alt="Pilates" class="mx-auto mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Pilates</h3>
+          <p>Entrenamiento enfocado en fortalecer el core, mejorar la postura y aumentar la flexibilidad mediante ejercicios controlados.</p>
+          <p class="mt-2 font-semibold">Horarios: Lunes y Miércoles, 9:00 - 17:00</p>
+          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="pilates">Reservar</button>
+        </div>
+        <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
+          <img src="sources/zumba.gif" alt="Zumba" class="mx-auto mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Zumba</h3>
+          <p>Clases de baile fitness que combinan ritmos latinos y ejercicios aeróbicos para una experiencia divertida y energizante.</p>
+          <p class="mt-2 font-semibold">Horarios: Martes y Jueves, 10:00 - 19:00</p>
+          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="zumba">Reservar</button>
+        </div>
+        <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
+          <img src="sources/boxeo.gif" alt="Boxeo" class="mx-auto mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Boxeo</h3>
+          <p>Sesiones de entrenamiento de boxeo que mejoran la fuerza, coordinación y confianza, con guantes y sacos de entrenamiento.</p>
+          <p class="mt-2 font-semibold">Horarios: Viernes y Sábado, 8:00 - 16:00</p>
+          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="boxeo">Reservar</button>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="horarios.html" class="ver-mas text-black font-semibold hover:underline animate-button">Ver horarios completos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white p-6">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Coleman Gym. Todos los derechos reservados.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="https://instagram.com" target="_blank" class="hover:text-gray-300 animate-button">Instagram</a>
+        <a href="https://facebook.com" target="_blank" class="hover:text-gray-300 animate-button">Facebook</a>
+        <a href="https://tiktok.com" target="_blank" class="hover:text-gray-300 animate-button">TikTok</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

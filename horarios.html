@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Horarios completos de clases en Coleman Gym - Spinning, Yoga, Cross-Training, Pilates, Zumba y Boxeo.">
+  <meta name="keywords" content="gimnasio, fitness, horarios, spinning, yoga, cross-training, pilates, zumba, boxeo">
+  <meta name="author" content="Coleman Gym">
+  <title>Horarios - Coleman Gym</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="sources/logo-blanco.png">
+  <script defer src="js/script.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-black text-white p-4 fixed w-full top-0 z-20">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="sources/logo-blanco.png" alt="Coleman Gym Logo" class="h-16 mr-2">
+        <span class="text-xl font-bold">Coleman Gym</span>
+      </div>
+      <button id="hamburger" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Dropdown Menu -->
+    <div id="dropdown-menu" class="hidden bg-black text-white w-full absolute top-20 left-0 z-10">
+      <ul class="flex flex-col items-center py-6">
+        <li class="py-3 w-full text-center menu-item"><a href="index.html" class="nav-link hover:text-gray-300 text-lg font-semibold">Inicio</a></li>
+        <li class="py-3 w-full text-center menu-item"><a href="clases.html" class="nav-link hover:text-gray-300 text-lg font-semibold">Clases</a></li>
+        <li class="py-3 w-full text-center menu-item"><a href="index.html#shop" class="nav-link hover:text-gray-300 text-lg font-semibold">Tienda</a></li>
+        <li class="py-3 w-full text-center menu-item"><a href="index.html#blog" class="nav-link hover:text-gray-300 text-lg font-semibold">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="schedules-hero" class="h-screen flex items-center justify-center relative overflow-hidden pt-16">
+    <video class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay muted loop playsinline>
+      <source src="sources/boxeo-landing.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="relative text-center text-white z-10">
+      <h1 class="text-5xl font-bold mb-4">Horarios de Clases</h1>
+      <p class="text-xl mb-6">Consulta los horarios completos de nuestras clases y reserva tu sesión.</p>
+      <a href="#schedules" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 animate-button">Ver horarios</a>
+    </div>
+  </section>
+
+  <!-- Schedules Section -->
+  <section id="schedules" class="py-16 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Horarios Completos</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full bg-gray-100 rounded-lg table-auto">
+          <thead>
+            <tr class="bg-black text-white">
+              <th class="p-4 text-left">Clase</th>
+              <th class="p-4 text-center">Lunes</th>
+              <th class="p-4 text-center">Martes</th>
+              <th class="p-4 text-center">Miércoles</th>
+              <th class="p-4 text-center">Jueves</th>
+              <th class="p-4 text-center">Viernes</th>
+              <th class="p-4 text-center">Sábado</th>
+              <th class="p-4 text-center">Domingo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="class-card border-b">
+              <td class="p-4 font-semibold">Spinning</td>
+              <td class="p-4 text-center">7:00 - 20:00</td>
+              <td class="p-4 text-center">7:00 - 20:00</td>
+              <td class="p-4 text-center">7:00 - 20:00</td>
+              <td class="p-4 text-center">7:00 - 20:00</td>
+              <td class="p-4 text-center">7:00 - 20:00</td>
+              <td class="p-4 text-center">8:00 - 12:00</td>
+              <td class="p-4 text-center">-</td>
+            </tr>
+            <tr class="class-card border-b">
+              <td class="p-4 font-semibold">Yoga</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">8:00 - 18:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">8:00 - 18:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">9:00 - 13:00</td>
+              <td class="p-4 text-center">-</td>
+            </tr>
+            <tr class="class-card border-b">
+              <td class="p-4 font-semibold">Cross-Training</td>
+              <td class="p-4 text-center">6:00 - 19:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">6:00 - 19:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">6:00 - 19:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">-</td>
+            </tr>
+            <tr class="class-card border-b">
+              <td class="p-4 font-semibold">Pilates</td>
+              <td class="p-4 text-center">9:00 - 17:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">9:00 - 17:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">10:00 - 14:00</td>
+              <td class="p-4 text-center">-</td>
+            </tr>
+            <tr class="class-card border-b">
+              <td class="p-4 font-semibold">Zumba</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">10:00 - 19:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">10:00 - 19:00</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">11:00 - 15:00</td>
+              <td class="p-4 text-center">-</td>
+            </tr>
+            <tr class="class-card">
+              <td class="p-4 font-semibold">Boxeo</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">-</td>
+              <td class="p-4 text-center">8:00 - 16:00</td>
+              <td class="p-4 text-center">8:00 - 16:00</td>
+              <td class="p-4 text-center">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-8">
+        <a href="clases.html" class="ver-mas text-black font-semibold hover:underline animate-button">Volver a clases</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white p-6">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Coleman Gym. Todos los derechos reservados.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="https://instagram.com" target="_blank" class="hover:text-gray-300 animate-button">Instagram</a>
+        <a href="https://facebook.com" target="_blank" class="hover:text-gray-300 animate-button">Facebook</a>
+        <a href="https://tiktok.com" target="_blank" class="hover:text-gray-300 animate-button">TikTok</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

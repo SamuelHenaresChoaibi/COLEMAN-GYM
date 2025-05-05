@@ -10,35 +10,47 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#home {
+#classes-hero {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-#home video {
+#classes-hero video {
     filter: brightness(70%);
 }
 
-.class-card, .shop-item, .blog-post {
+.class-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
     animation: slideUp 0.6s ease forwards;
 }
 
-.class-card:nth-child(1), .shop-item:nth-child(1), .blog-post:nth-child(1) {
+.class-card:nth-child(1) {
     animation-delay: 0.2s;
 }
 
-.class-card:nth-child(2), .shop-item:nth-child(2), .blog-post:nth-child(2) {
+.class-card:nth-child(2) {
     animation-delay: 0.4s;
 }
 
-.class-card:nth-child(3), .shop-item:nth-child(3) {
+.class-card:nth-child(3) {
     animation-delay: 0.6s;
 }
 
-.class-card:hover, .shop-item:hover, .blog-post:hover {
+.class-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.class-card:nth-child(5) {
+    animation-delay: 1.0s;
+}
+
+.class-card:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.class-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -52,7 +64,7 @@ nav {
     transition: background-color 0.3s ease, transform 0.3s ease;
     opacity: 0;
     transform: translateY(10px);
-    animation: slideUp 0.6s ease forwards 0.8s;
+    animation: slideUp 0.6s ease forwards 1.4s;
 }
 
 .ver-mas:hover {
@@ -134,20 +146,12 @@ section {
     animation: sectionFadeIn 0.8s ease forwards;
 }
 
-#home {
+#classes-hero {
     animation-delay: 0.2s;
 }
 
 #classes {
     animation-delay: 0.4s;
-}
-
-#shop {
-    animation-delay: 0.6s;
-}
-
-#blog {
-    animation-delay: 0.8s;
 }
 
 footer {
