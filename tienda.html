@@ -23,11 +23,18 @@
       <div class="flex items-center">
         <img src="sources/logo-blanco.png" alt="Coleman Gym Logo" class="h-20">
       </div>
-      <button id="hamburger" class="text-white focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
+      <div class="flex items-center space-x-4">
+        <a href="cesta.html" class="text-white hover:text-gray-300">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+        </a>
+        <button id="hamburger" class="text-white focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
     </div>
     <!-- Dropdown Menu -->
     <div id="dropdown-menu" class="hidden bg-black text-white w-full absolute top-20 left-0 z-10">
@@ -135,20 +142,27 @@
   <!-- Payment Methods Section -->
   <section id="payment-methods" class="py-16 bg-gray-100">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8">Métodos de Pago</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="class-card bg-white p-6 rounded-lg text-center">
+      <h2 class="text-3xl font-bold text-center mb-8 animate-section">Métodos de Pago</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="shop-item bg-white p-6 rounded-lg text-center border-2 border-transparent shadow-md hover:shadow-xl hover:scale-105 hover:bg-gray-50 hover:border-black transition-all duration-300 fadeSlideUp" style="animation-delay: 0.2s;">
           <h3 class="text-xl font-semibold mb-2">Tarjeta de Crédito/Débito</h3>
           <p>Paga de forma segura con Visa, MasterCard o American Express.</p>
         </div>
-        <div class="class-card bg-white p-6 rounded-lg text-center">
+        <div class="shop-item bg-white p-6 rounded-lg text-center border-2 border-transparent shadow-md hover:shadow-xl hover:scale-105 hover:bg-gray-50 hover:border-black transition-all duration-300 fadeSlideUp" style="animation-delay: 0.4s;">
           <h3 class="text-xl font-semibold mb-2">PayPal</h3>
           <p>Usa tu cuenta de PayPal para pagos rápidos y protegidos.</p>
         </div>
-        <div class="class-card bg-white p-6 rounded-lg text-center">
+        <div class="shop-item bg-white p-6 rounded-lg text-center border-2 border-transparent shadow-md hover:shadow-xl hover:scale-105 hover:bg-gray-50 hover:border-black transition-all duration-300 fadeSlideUp" style="animation-delay: 0.6s;">
           <h3 class="text-xl font-semibold mb-2">Transferencia Bancaria</h3>
           <p>Realiza una transferencia directa a nuestra cuenta bancaria.</p>
         </div>
+        <div class="shop-item bg-white p-6 rounded-lg text-center border-2 border-transparent shadow-md hover:shadow-xl hover:scale-105 hover:bg-gray-50 hover:border-black transition-all duration-300 fadeSlideUp" style="animation-delay: 0.8s;">
+          <h3 class="text-xl font-semibold mb-2">Bizum</h3>
+          <p>Paga fácilmente con Bizum desde tu móvil.</p>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="index.html" class="ver-mas text-black font-semibold hover:underline animate-button">Volver a inicio</a>
       </div>
     </div>
   </section>
