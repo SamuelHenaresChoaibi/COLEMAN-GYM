@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    opacity: 0;
+    animation: fadeInPage 1s ease forwards;
+}
+
+nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+#home video {
+    filter: brightness(70%);
+}
+
+.class-card, .shop-item, .blog-post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s ease forwards;
+}
+
+.class-card:nth-child(1), .shop-item:nth-child(1), .blog-post:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.class-card:nth-child(2), .shop-item:nth-child(2), .blog-post:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.class-card:nth-child(3), .shop-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.class-card:hover, .shop-item:hover, .blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ver-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideUp 0.6s ease forwards 0.8s;
+}
+
+.ver-mas:hover {
+    background-color: #333;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+#dropdown-menu {
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: menuSlideIn 0.4s ease forwards;
+}
+
+#dropdown-menu ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
+#dropdown-menu ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#dropdown-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+#dropdown-menu ul li a.active {
+    color: #fff;
+    font-weight: bold;
+    border-left: 4px solid #fff;
+    padding-left: 0.75rem;
+}
+
+.menu-item {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#dropdown-menu.show .menu-item {
+    animation: slideIn 0.3s ease forwards;
+}
+
+#dropdown-menu.show .menu-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#dropdown-menu.show .menu-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#dropdown-menu.show .menu-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#dropdown-menu.show .menu-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: sectionFadeIn 0.8s ease forwards;
+}
+
+#home {
+    animation-delay: 0.2s;
+}
+
+#classes {
+    animation-delay: 0.4s;
+}
+
+#shop {
+    animation-delay: 0.6s;
+}
+
+#blog {
+    animation-delay: 0.8s;
+}
+
+footer {
+    transform: translateY(20px);
+    animation: slideUpFooter 0.6s ease forwards 0.8s;
+}
+
+.exit-animation {
+    animation: fadeOutPage 0.5s ease forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutPage {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sectionFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes menuSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpFooter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
