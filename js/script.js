@@ -69,14 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Reservation button functionality
-    document.querySelectorAll('.reserve-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const className = button.getAttribute('data-class');
-            alert(`¡Reserva confirmada para la clase de ${className}! Te enviaremos un correo con los detalles.`);
-        });
-    });
-
     // Placeholder for shop cart functionality
     document.querySelectorAll('.shop-item button').forEach(button => {
         button.addEventListener('click', () => {

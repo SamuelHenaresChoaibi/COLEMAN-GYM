@@ -34,7 +34,7 @@
         <li class="py-3 w-full text-center menu-item"><a href="horarios.html" class="nav-link hover:text-gray-300 text-lg font-semibold">Horarios de Clases</a></li>
         <li class="py-3 w-full text-center menu-item"><a href="planes-pagos.html" class="nav-link hover:text-gray-300 text-lg font-semibold">Planes de Pago</a></li>
         <li class="py-3 w-full text-center menu-item"><a href="tienda.html" class="nav-link hover:text-gray-300 text-lg font-semibold">Tienda</a></li>
-        <li class="py-3 w-full text-center menu-item"><a href="#blog" class="nav-link hover:text-gray-300 text-lg font-semibold">Blog</a></li>
+        <li class="py-3 w-full text-center menu-item"><a href="blog.html" class="nav-link hover:text-gray-300 text-lg font-semibold">Blog</a></li>
       </ul>
     </div>
   </nav>
@@ -60,18 +60,22 @@
         <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
           <h3 class="text-xl font-semibold mb-2">Spinning</h3>
           <p>Sesiones intensivas de ciclismo indoor para mejorar resistencia y quemar calorías.</p>
-          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="spinning">Reservar</button>
+          <div class="text-center mt-8">
+            <a href="planes-pagos.html" class="ver-mas text-black font-semibold hover:underline animate-button">Planes de Pago</a>
+          </div>        
         </div>
         <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
           <h3 class="text-xl font-semibold mb-2">Yoga</h3>
           <p>Clases para fortalecer cuerpo y mente, con enfoque en flexibilidad y relajación.</p>
-          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="yoga">Reservar</button>
-        </div>
+          <div class="text-center mt-8">
+            <a href="planes-pagos.html" class="ver-mas text-black font-semibold hover:underline animate-button">Planes de Pago</a>
+          </div>        </div>
         <div class="class-card bg-gray-100 p-6 rounded-lg text-center">
           <h3 class="text-xl font-semibold mb-2">Cross-Training</h3>
           <p>Entrenamientos funcionales de alta intensidad para mejorar fuerza y condición física.</p>
-          <button class="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 reserve-btn animate-button" data-class="cross-training">Reservar</button>
-        </div>
+          <div class="text-center mt-8">
+            <a href="planes-pagos.html" class="ver-mas text-black font-semibold hover:underline animate-button">Planes de Pago</a>
+          </div>        </div>
       </div>
       <div class="text-center mt-8">
         <a href="clases.html" class="ver-mas text-black font-semibold hover:underline animate-button">Ver más</a>
@@ -109,27 +113,28 @@
     </div>
   </section>
 
-  <!-- Blog Section -->
-  <section id="blog" class="py-16 bg-white">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8 animate-section">Blog</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="blog-post bg-gray-100 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-2">Guía de Nutrición para Principiantes</h3>
-          <p>Descubre cómo una dieta equilibrada puede potenciar tus entrenamientos.</p>
-          <a href="#" class="text-black font-semibold hover:underline animate-button">Leer más</a>
-        </div>
-        <div class="blog-post bg-gray-100 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-2">Beneficios del Yoga</h3>
-          <p>Explora cómo el yoga mejora tu flexibilidad y reduce el estrés.</p>
-          <a href="#" class="text-black font-semibold hover:underline animate-button">Leer más</a>
-        </div>
+<!-- Blog Section -->
+<section id="blog" class="py-16 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8 animate-section">Blog</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="blog-post bg-gray-100 p-6 rounded-lg border-2 border-transparent shadow-md hover:shadow-xl hover:scale-105 hover:bg-gray-200 hover:border-black transition-all duration-300 fadeSlideUp" style="animation-delay: 0.2s;">
+        <h3 class="text-xl font-semibold mb-2">Guía de Nutrición para Principiantes</h3>
+        <p>Descubre cómo una dieta equilibrada puede potenciar tus entrenamientos.</p>
+        <a href="#" class="text-black font-semibold hover:text-gray-900 hover:underline animate-button">Leer más</a>
       </div>
-      <div class="text-center mt-8">
-        <a href="#" class="ver-mas text-black font-semibold hover:underline animate-button">Ver más</a>
+      <div class="blog-post bg-gray-100 p-6 rounded-lg border-2 border-transparent shadow-md hover:shadow-xl hover:scale-105 hover:bg-gray-200 hover:border-black transition-all duration-300 fadeSlideUp" style="animation-delay: 0.4s;">
+        <h3 class="text-xl font-semibold mb-2">Beneficios del Yoga</h3>
+        <p>Explora cómo el yoga mejora tu flexibilidad y reduce el estrés.</p>
+        <a href="#" class="text-black font-semibold hover:text-gray-900 hover:underline animate-button">Leer más</a>
       </div>
     </div>
-  </section>
+    <div class="text-center mt-8">
+      <a href="blog.html" class="ver-mas text-black font-semibold hover:underline animate-button">Ver más</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-black text-white p-6">
