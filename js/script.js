@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hamburger menu toggle
     const hamburger = document.getElementById('hamburger');
     const dropdownMenu = document.getElementById('dropdown-menu');
+    const realizarPago = document.getElementById('realizar-pago');
 
     hamburger.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -149,6 +150,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, { threshold: 0.2 });
+
+    realizarPago.addEventListener('click', () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        if (cart.length === 0) {
+            alert('El carrito está vacío. Añade productos antes de realizar el pago.');
+        } else {
+            alert('Redirigiendo a la página de pago...');
+            window.location.href = 'index.html'; 
+            cart.length = 0; 
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+    });
 
     sections.forEach(section => observer.observe(section));
 });
